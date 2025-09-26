@@ -54,12 +54,22 @@ Recovery path → Customers moving from High → Medium saw a +20% lift in LTV.
 
 ## ✅ Business Recommendations
 
-Retention Strategy → Double down on loyalty programs for low-risk customers.
+#### Retention Strategy 
+**Insight**: Customers in this segment show the highest LTV and strong retention, making them the most valuable group. The marginal cost of retention is low compared to the lifetime return.  
+**Recommendation**: Invest in loyalty programs, exclusive perks, and tailored engagement initiatives to maximize their long-term value.  
 
-Credit & Fraud Controls → Apply strict credit rules for high-risk customers; allow reactivation only when ROI justifies.
 
-Upselling Medium Risk → Focus on cross-sell and upsell campaigns to transition them toward low-risk.
+#### Credit & Fraud Controls 
+**Insight**: High-risk customers generate the lowest LTV and display higher churn probability, with retention costs often exceeding potential ROI.  
+**Recommendation**: Apply strict credit limits, strengthen fraud monitoring, and minimize retention investment—focusing resources only when the expected return justifies it.  
 
-Early Warning System → Automate alerts on risk_segment changes (especially Low → High).
 
-Predictive Modeling → Leverage SCD2 history as features for advanced LTV forecasting models.
+#### Upselling Medium Risk 
+**Insight**: Medium-risk customers maintain a moderate LTV but represent the largest growth opportunity. Historical patterns show that customers who moved from High → Medium increased their LTV by +20%.  
+**Recommendation**: Prioritize cross-sell and upsell campaigns, product bundles, and targeted promotions to transition these customers toward the low-risk segment.  
+
+
+#### Early Warning System 
+**Insight**: Transitions such as Medium → High are frequent and strongly associated with declining LTV, serving as early churn signals.  
+**Recommendation**: Implement real-time alerts on risk_segment changes, especially when customers move to higher risk levels, enabling proactive measures such as renegotiations, discounts, or dedicated support.  
+
