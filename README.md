@@ -2,7 +2,7 @@
 
 This project demonstrates how to implement **Slowly Changing Dimensions (SCD) Type 2** in **Google BigQuery** to track changes in customer risk segments and analyze their impact on **Customer Lifetime Value (LTV)**.  
 
-By combining **data engineering (ETL + SCD2)** with **business analytics (LTV segmentation)**, the project illustrates how historical tracking of customer attributes can drive **smarter retention, credit, and marketing strategies**.  
+By combining **data engineering (ETL + SCD2)** with **business analytics (LTV segmentation)**, the project illustrates how historical tracking of customer attributes can drive **smarter retention, credit, and marketing strategies** by dimensional modeling and analytical enrichment. 
 
 ---
 
@@ -16,10 +16,6 @@ Two synthetic datasets were generated with **1,000 rows each** to simulate a rea
 - **signup_date** → Customer acquisition date  
 - **risk_segment** → Risk classification at acquisition (`Low`, `Medium`, `High`)  
 
-📌 **Risk Segment Distribution (at signup):**  
-- Low Risk: ~50%  
-- Medium Risk: ~30%  
-- High Risk: ~20%  
 
 ### 2. `transactions.csv`  
 - **transaction_id** → Unique ID for each transaction  
@@ -27,10 +23,13 @@ Two synthetic datasets were generated with **1,000 rows each** to simulate a rea
 - **transaction_date** → Date of transaction  
 - **amount** → Purchase amount (exponential distribution to mimic real-world spending)  
 
-📌 **Transaction Stats (synthetic sample):**  
-- Average transaction value: ~$100  
-- Median transaction value: ~$75  
-- Long-tail distribution → a few customers make very large purchases  
+
+### 3. Data Products
+- **First Layer** → Raw ingestion of customer risk updates and transactions
+
+- **Second Layer** → Dimensional modeling with fact_transactions and dim_customer_risk (SCD2)
+
+- **Third Layer** → Aggregations and analytical outputs (LTV segmented by risk)
 
 ---
 
