@@ -1,0 +1,1 @@
+CREATE OR REPLACE TABLE `scd2-ltv-analysis.tracking_risco_cliente.fact_transactions` AS SELECT CAST(transaction_id AS STRING) transaction_id, CAST(customer_id AS STRING) customer_id, DATE(transaction_date) transaction_date, SAFE_CAST(amount AS FLOAT64) amount FROM `scd2-ltv-analysis.tracking_risco_cliente.transactions_rawdata`;
